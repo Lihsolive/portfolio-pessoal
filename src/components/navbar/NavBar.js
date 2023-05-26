@@ -4,24 +4,24 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-import logo from "../../../assets/img/logo.svg";
-import linkedinIcon from "../../../assets/img/linkedin-icon.svg";
-import githubIcon from "../../../assets/img/github-icon.svg";
-import webIcon from "../../../assets/img/web-icon.svg";
+import logo from "../../assets/img/logo.svg";
+import linkedinIcon from "../../assets/img/linkedin-icon.svg";
+import githubIcon from "../../assets/img/github-icon.svg";
+import webIcon from "../../assets/img/web-icon.svg";
 
 import "./NavBar.css"
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
-  const [scrolled, seScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   //coloca uma cor de background no Navbar quando rolar a página
   useEffect(() => {
     const onScroll = () => {
-      if (window.screenY > 50) {
-        seScrolled(true);
+      if (window.scrollY > 50) {
+        setScrolled(true);
       } else {
-        seScrolled(false);
+        setScrolled(false);
       }
     };
     window.addEventListener("scroll", onScroll);
@@ -74,13 +74,13 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="/">
+              <a href="https://www.linkedin.com/in/liliamoliveira/">
                 <img src={linkedinIcon} alt="" />
               </a>
-              <a href="/">
+              <a href="https://github.com/Lihsolive">
                 <img src={githubIcon} alt="" />
               </a>
-              <a href="/">
+              <a href="https://liliamoliveira.myportfolio.com/">
                 <img src={webIcon} alt="" />
               </a>
             </div>
