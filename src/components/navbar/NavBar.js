@@ -9,7 +9,7 @@ import linkedinIcon from "../../assets/img/linkedin-icon.svg";
 import githubIcon from "../../assets/img/github-icon.svg";
 import webIcon from "../../assets/img/web-icon.svg";
 
-import "./NavBar.css"
+import "./NavBar.css";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -37,13 +37,13 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" href="#home" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link
               href="#home"
               className={
@@ -73,6 +73,10 @@ export const NavBar = () => {
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
+            <button className="vvd" onClick={() => console.log("connect")}>
+              <span>Let's Connect</span>{" "}
+            </button>
+
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/liliamoliveira/">
                 <img src={linkedinIcon} alt="" />
@@ -84,9 +88,6 @@ export const NavBar = () => {
                 <img src={webIcon} alt="" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's Connect</span>{" "}
-            </button>
           </span>
         </Navbar.Collapse>
       </Container>
