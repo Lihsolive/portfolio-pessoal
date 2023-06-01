@@ -37,7 +37,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo" href="#home" />
+          <img src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -63,19 +63,26 @@ export const NavBar = () => {
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#projects"
+              href="#projeto"
               className={
-                activeLink === "projects" ? "active navbar-link" : "navbar-link"
+                activeLink === "projetos" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("projects")}
+              onClick={() => onUpdateActiveLink("projetos")}
             >
               Projects
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's Connect</span>{" "}
+          <Nav.Link href="#conectar"
+              className={
+                activeLink === "conectar" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("conectar")}
+            >
+            <button className="vvd" >
+              <span>Let's Connect</span>
             </button>
+          </Nav.Link>
 
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/liliamoliveira/">

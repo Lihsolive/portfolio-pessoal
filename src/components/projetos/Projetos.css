@@ -106,14 +106,29 @@
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1.1em;
+  line-height: 1.5em;
 }
-.proj-txtx span {
+.proj-txtx-description {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+
+.proj-link {
+  cursor: pointer;
+  line-height: 6rem;
+  text-transform: uppercase;
+}
+
+.proj-txtx-link-url {
+  color: white;
+}
+
+.proj-txtx-link-url:hover {
+  color: rgb(255, 0, 191);
+}
+
 .background-image-right {
   top: 20%;
   position: absolute;

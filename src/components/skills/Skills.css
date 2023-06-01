@@ -29,6 +29,14 @@
     width: 50%;
     margin: 0 auto 15px auto;
   }
+
+  .stats-github {
+    padding: 20px;
+    max-width: 555px;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
   .background-image-left {
     top: 28%;
     position: absolute;
