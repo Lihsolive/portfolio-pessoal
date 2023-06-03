@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Navbar, Nav } from "react-bootstrap";
 
 import logo from "../../assets/img/logo.svg";
 import linkedinIcon from "../../assets/img/linkedin-icon.svg";
@@ -10,6 +9,34 @@ import githubIcon from "../../assets/img/github-icon.svg";
 import webIcon from "../../assets/img/web-icon.svg";
 
 import "./NavBar.css";
+
+const CustomToggle = React.forwardRef(({ children, onClick }, ref) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+/* para travar o scroll quando o menu é aberto */
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [isOpen]);
+
+/* para mudar o ícone do navbar quando o menu é aberto */
+  return (
+    <button
+      ref={ref}
+      onClick={(e) => {
+        setIsOpen(!isOpen);
+        onClick(e);
+      }}
+      className={`navbar-toggler ${isOpen ? "open" : ""}`}
+    >
+      {children}
+    </button>
+  );
+});
+
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -39,9 +66,7 @@ export const NavBar = () => {
         <Navbar.Brand href="/">
           <img src={logo} alt="Logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
+        <Navbar.Toggle as={CustomToggle} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link
@@ -73,16 +98,17 @@ export const NavBar = () => {
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
-          <Nav.Link href="#conectar"
+            <Nav.Link
+              href="#conectar"
               className={
                 activeLink === "conectar" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("conectar")}
             >
-            <button className="vvd" >
-              <span>Let's Connect</span>
-            </button>
-          </Nav.Link>
+              <button className="vvd">
+                <span>Let's Connect</span>
+              </button>
+            </Nav.Link>
 
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/liliamoliveira/">

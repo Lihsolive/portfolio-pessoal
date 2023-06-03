@@ -3,8 +3,7 @@ import { Container } from "react-bootstrap";
 import { Col, Row } from "react-bootstrap";
 
 import contactImg from "../../assets/img/contact-img.svg";
-
-import "./Contato.css";
+import "./Contato.css"
 
 export const Contato = () => {
   const formInitalDetails = {
@@ -28,22 +27,25 @@ export const Contato = () => {
 
   const handleSubmit = async (e) => {
     e.prevetDefault();
-    setButtonText('Sending...');
+    setButtonText("Sending...");
     let response = await fetch("http://localhost:3000/contato", {
-        method: "POST",
-        headers: {
-            "Content-Type": "Aplication/json;charset=utf-8",
-    },
-    body: JSON.stringify(formDetails),
-  })
-  setButtonText("Send");
-  let result = response.json();
-  setFormDetails(formInitalDetails);
-  if(result.code === 200) {
-    setStatus({ success: true, message: "Message sent successfully!" })
-  } else {
-    setStatus({ success: false, message: "Something went wrong, please try again later."})
-  }
+      method: "POST",
+      headers: {
+        "Content-Type": "Aplication/json;charset=utf-8",
+      },
+      body: JSON.stringify(formDetails),
+    });
+    setButtonText("Send");
+    let result = response.json();
+    setFormDetails(formInitalDetails);
+    if (result.code === 200) {
+      setStatus({ success: true, message: "Message sent successfully!" });
+    } else {
+      setStatus({
+        success: false,
+        message: "Something went wrong, please try again later.",
+      });
+    }
   };
 
   return (

@@ -5,6 +5,7 @@ import { Banner } from "./components/banner/Banner"
 import { Skills } from "./components/skills/Skills"
 import { Projetos } from './components/projetos/Projetos'
 import { Contato } from './components/contato/Contato'
+import { Footer } from './components/footer/Footer'
 
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
       <Skills />
       <Projetos />
       <Contato />
+      <Footer />
     </div>
   );
 }
