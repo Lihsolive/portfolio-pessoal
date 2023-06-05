@@ -6,6 +6,7 @@ import { ProjetosCard } from "../projetos-card/ProjetosCard";
 import projImg1 from "../../assets/img/project-img1.png";
 import projImg2 from "../../assets/img/project-img2.png";
 import projImg3 from "../../assets/img/project-img3.png";
+
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 
 import "./Projetos.css";
@@ -75,8 +76,7 @@ export const Projetos = () => {
                 >
                   <h2>Projetos</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    Esses são alguns dos principais projetos que desenvolvi até o momento.
                   </p>
                   <Tab.Container id="projetos-tabs" defaultActiveKey="first">
                     <Nav

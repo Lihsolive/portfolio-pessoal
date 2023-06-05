@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../../assets/img/header-img.svg";
+import headerImg from "../../assets/img/robo.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -77,15 +77,14 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Com sua formação e habilidades, você está bem equipada para
+                    enfrentar desafios no campo do design e tecnologia.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let's Connect <ArrowRightCircle size={25} />
-                  </button>
+                  <a href="#projeto">
+                    <button>
+                      Ver Projetos <ArrowRightCircle size={25} />
+                    </button>
+                  </a>
                 </div>
               )}
             </TrackVisibility>
@@ -98,7 +97,7 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <img src={headerImg} alt="Header Img" />
+                  <img src={headerImg} alt="Robo Img" className="robo" />
                 </div>
               )}
             </TrackVisibility>
