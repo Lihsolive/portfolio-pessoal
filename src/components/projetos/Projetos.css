@@ -1,7 +1,7 @@
 .projeto {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: #00011E;
 }
 .projeto h2 {
   font-size: 45px;
@@ -46,7 +46,7 @@
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(50deg, #ff00cc 2%, #150030 111%);
   top: 0;
   left: 0;
   z-index: -1;

@@ -1,5 +1,5 @@
-// import { Container, Row, Col } from "react-bootstrap";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+// import { Container, Row, Col, Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -105,12 +105,12 @@ export const Skills = () => {
                 </div>
               </Carousel>
 
-              <div className="stats-github">
+              {/* <div className="stats-github">
                 <Image
                   src="https://camo.githubusercontent.com/7698af53daeddb9b663204e491c74c8ea52bcd632a9569aae639765fa7918821/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d4c6968736f6c697665266c61796f75743d636f6d70616374266c616e67735f636f756e743d37267468656d653d6d69646e696768742d707572706c65"
                   className="img-responsive"
                 />
-              </div>
+              </div> */}
             </div>
           </Col>
         </Row>

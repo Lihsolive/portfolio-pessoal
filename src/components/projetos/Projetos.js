@@ -76,7 +76,7 @@ export const Projetos = () => {
                 >
                   <h2>Projetos</h2>
                   <p>
-                    Esses são alguns dos principais projetos que desenvolvi até o momento.
+                    Principais projetos desenvolvidos até o momento.
                   </p>
                   <Tab.Container id="projetos-tabs" defaultActiveKey="first">
                     <Nav

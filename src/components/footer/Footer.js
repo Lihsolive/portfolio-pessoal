@@ -27,7 +27,7 @@ export const Footer = () => {
                 <img src={webIcon} alt="Web Icon" />
               </a>
             </div>
-            <p>CopyRight 2023. Todos os Direitos Reservados.</p>
+            <p>Copyright © 2023 Liliam Oliveira. Todos os direitos reservados.</p>
           </Col>
         </Row>
       </Container>

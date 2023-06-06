@@ -1,7 +1,7 @@
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url("../../assets/img/background-banner.svg");
+  background-image: url("../../assets/img/bg-banner.svg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -55,7 +55,7 @@
   margin-left: 25px;
 }
 .banner img {
-  height: 400px;
+  height: 500px;
   animation: float 3s linear infinite;
 }
 @keyframes float {

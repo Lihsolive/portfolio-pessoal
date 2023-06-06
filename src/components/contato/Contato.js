@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container } from "react-bootstrap";
 import { Col, Row } from "react-bootstrap";
 
-import contactImg from "../../assets/img/contact-img.svg";
+import contactImg from "../../assets/img/img-contato.svg";
 import "./Contato.css"
 
 export const Contato = () => {
@@ -56,7 +56,7 @@ export const Contato = () => {
             <img src={contactImg} alt="Contato" />
           </Col>
           <Col md={6}>
-            <h2>Get In Touch</h2>
+            <h2>Entrar em contato</h2>
             <form onSubmit={handleSubmit}>
               <Row>
                 <Col sm={6} className="px-1">

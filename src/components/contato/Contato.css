@@ -1,5 +1,5 @@
 .contato {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #00011E -5.91%, #4a2fbd 111.58%);
   padding: 60px 0 200px 0;
 }
 .contato img {
@@ -27,7 +27,7 @@
 .contato form input:focus,
 .contato form textarea:focus {
   background: rgba(255, 255, 255, 1);
-  color: #121212;
+  color: #00011E;
 }
 .contato form input::placeholder,
 .contato form textarea::placeholder {
@@ -37,12 +37,12 @@
 }
 .contato form input:focus::placeholder,
 .contato form textarea:focus::placeholder {
-  color: #121212;
+  color: #00011E;
   opacity: 0.8;
 }
 .contato form button {
   font-weight: 700;
-  color: #000;
+  color: #00011E;
   background-color: #fff;
   padding: 14px 48px;
   font-size: 18px;
@@ -50,6 +50,7 @@
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
+  border-radius: 20px;
 }
 .contato form button span {
   z-index: 1;
@@ -60,7 +61,8 @@
 }
 .contato form button::before {
   content: "";
-  background: #121212;
+  /* background: #00011E; */
+  background: linear-gradient(50deg, #ff00cc 2%, #150030 111%);
   width: 0;
   height: 100%;
   position: absolute;
@@ -68,6 +70,8 @@
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
+  border-radius: 20px;
+
 }
 .contato form button:hover::before {
   width: 100%;
