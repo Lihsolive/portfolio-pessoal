@@ -8,14 +8,20 @@ nav.navbar {
   display: flex;
   justify-content: center;
 }
+
 nav.navbar.scrolled {
   padding: 10px 0;
-  /* background-color: rgba(0,1,30,1); */
-  background: linear-gradient(208deg, rgba(0,1,30,1) 25%,  rgba(30,9,53,1)100%);
+  background: linear-gradient(
+    208deg,
+    rgba(0, 1, 30, 1) 25%,
+    rgba(30, 9, 53, 1) 100%
+  );
 }
+
 nav.navbar a.navbar-brand {
   width: 9%;
 }
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -24,6 +30,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
 }
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
@@ -99,7 +106,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #00011E;
+  color: #00011e;
 }
 .navbar-text button:hover::before {
   content: "";
@@ -164,7 +171,11 @@ button.navbar-toggler:focus {
 
 @media (max-width: 991px) {
   .navbar {
-    background: linear-gradient(208deg, rgba(0,1,30,1) 25%,  rgba(30,9,53,1)100%);
+    background: linear-gradient(
+      208deg,
+      rgba(0, 1, 30, 1) 25%,
+      rgba(30, 9, 53, 1) 100%
+    );
   }
   .navbar-nav {
     margin-top: 30px;

@@ -1,5 +1,7 @@
 .contato {
-  background: linear-gradient(90.21deg, #00011E -5.91%, #4a2fbd 111.58%);
+  /* background: linear-gradient(90.21deg, #00011E -5.91%, #4a2fbd 111.58%); */
+  /* background: linear-gradient(75deg, #00011E -5.91%, #6f2fbd 130%); */
+  background-color:  #02002c7a ;
   padding: 60px 0 200px 0;
 }
 .contato img {
@@ -76,3 +78,4 @@
 .contato form button:hover::before {
   width: 100%;
 }
+

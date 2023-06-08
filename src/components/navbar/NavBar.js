@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import { Navbar, Nav } from "react-bootstrap";
 
-import logo from "../../assets/img/logo2.svg";
+import logo from "../../assets/img/logo.svg";
 import linkedinIcon from "../../assets/img/linkedin-icon.svg";
 import githubIcon from "../../assets/img/github-icon.svg";
 import webIcon from "../../assets/img/web-icon.svg";

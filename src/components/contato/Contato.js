@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container } from "react-bootstrap";
 import { Col, Row } from "react-bootstrap";
 
-import contactImg from "../../assets/img/img-contato.svg";
+import contactImg from "../../assets/img/contato.svg";
 import "./Contato.css"
 
 export const Contato = () => {
@@ -15,7 +15,7 @@ export const Contato = () => {
   };
 
   const [formDetails, setFormDetails] = useState(formInitalDetails);
-  const [buttonText, setButtonText] = useState("Send");
+  const [buttonText, setButtonText] = useState("Enviar");
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -27,7 +27,7 @@ export const Contato = () => {
 
   const handleSubmit = async (e) => {
     e.prevetDefault();
-    setButtonText("Sending...");
+    setButtonText("Enviando...");
     let response = await fetch("http://localhost:3000/contato", {
       method: "POST",
       headers: {
@@ -35,7 +35,7 @@ export const Contato = () => {
       },
       body: JSON.stringify(formDetails),
     });
-    setButtonText("Send");
+    setButtonText("Enviar");
     let result = response.json();
     setFormDetails(formInitalDetails);
     if (result.code === 200) {
@@ -63,7 +63,7 @@ export const Contato = () => {
                   <input
                     type="text"
                     value={formDetails.firstName}
-                    placeholder="First Name"
+                    placeholder="Nome"
                     onChange={(e) => onFormUpdate("firstName", e.target.value)}
                   />
                 </Col>
@@ -71,7 +71,7 @@ export const Contato = () => {
                   <input
                     type="text"
                     value={formDetails.lastName}
-                    placeholder="Last Name"
+                    placeholder="Sobrenome"
                     onChange={(e) => onFormUpdate("lastName", e.target.value)}
                   />
                 </Col>
@@ -79,7 +79,7 @@ export const Contato = () => {
                   <input
                     type="text"
                     value={formDetails.email}
-                    placeholder="Email Adsress"
+                    placeholder="Email"
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
                 </Col>
@@ -87,7 +87,7 @@ export const Contato = () => {
                   <input
                     type="text"
                     value={formDetails.phone}
-                    placeholder="Phone"
+                    placeholder="Telefone"
                     onChange={(e) => onFormUpdate("Phone", e.target.value)}
                   />
                 </Col>
@@ -95,7 +95,7 @@ export const Contato = () => {
                   <textarea
                     row="6"
                     value={formDetails.message}
-                    placeholder="Message"
+                    placeholder="Mensagem"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   />
                   <button type="submit">

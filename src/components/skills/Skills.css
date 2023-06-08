@@ -1,13 +1,15 @@
 .skill {
     padding: 0 0 50px 0;
     position: relative;
+    background: #02002c7a;
   }
   .skill-bx {
-    background: #01032c;
+    background: #02002c;
     border-radius: 64px;
     text-align: center;
     padding: 60px 50px;
     margin-top: -60px;
+    box-shadow: 10px 10px 20px #02001d7a;
   }
   .skill h2 {
       font-size: 45px;
@@ -43,4 +45,8 @@
     bottom: 0;
     width: 40%;
     z-index: -4;
+  }
+
+  button.react-multiple-carousel__arrow.react-multiple-carousel__arrow {
+    background: transparent;
   }

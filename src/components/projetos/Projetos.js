@@ -3,9 +3,13 @@ import TrackVisibility from "react-on-screen";
 import "animate.css";
 
 import { ProjetosCard } from "../projetos-card/ProjetosCard";
-import projImg1 from "../../assets/img/project-img1.png";
-import projImg2 from "../../assets/img/project-img2.png";
+import projImg1 from "../../assets/img/acoli.png";
+import projImg2 from "../../assets/img/myBlogLi.png";
 import projImg3 from "../../assets/img/project-img3.png";
+
+import projImg4 from "../../assets/img/dulceCafe.png";
+import projImg5 from "../../assets/img/instatily.png";
+// import projImg6 from "../../assets/img/bookflix.png";
 
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 
@@ -27,13 +31,13 @@ export const Projetos = () => {
       linkURL: "https://acoli.vercel.app/",
       imgUrl: projImg2,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      link: "conferir",
-      linkURL: "https://acoli.vercel.app/",
-      imgUrl: projImg3,
-    },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   link: "conferir",
+    //   linkURL: "https://acoli.vercel.app/",
+    //   imgUrl: projImg3,
+    // },
   ];
 
   const second = [
@@ -42,22 +46,22 @@ export const Projetos = () => {
       description: "Design & Development",
       link: "conferir",
       linkURL: "https://myblogli.vercel.app/",
-      imgUrl: projImg2,
+      imgUrl: projImg4,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       link: "conferir",
       linkURL: "https://acoli.vercel.app/",
-      imgUrl: projImg2,
+      imgUrl: projImg5,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      link: "conferir",
-      linkURL: "https://acoli.vercel.app/",
-      imgUrl: projImg2,
-    },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   link: "conferir",
+    //   linkURL: "https://acoli.vercel.app/",
+    //   imgUrl: projImg6,
+    // },
   ];
 
   const third = [];
