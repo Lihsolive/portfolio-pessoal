@@ -3,13 +3,18 @@ import TrackVisibility from "react-on-screen";
 import "animate.css";
 
 import { ProjetosCard } from "../projetos-card/ProjetosCard";
+
 import projImg1 from "../../assets/img/acoli.png";
 import projImg2 from "../../assets/img/myBlogLi.png";
 import projImg3 from "../../assets/img/project-img3.png";
 
 import projImg4 from "../../assets/img/dulceCafe.png";
 import projImg5 from "../../assets/img/instatily.png";
-// import projImg6 from "../../assets/img/bookflix.png";
+import projImg6 from "../../assets/img/bookflix.png";
+
+// import projImg7 from "../../assets/img/dulceCafe.png";
+// import projImg8 from "../../assets/img/instatily.png";
+// import projImg9 from "../../assets/img/bookflix.png";
 
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 
@@ -18,53 +23,68 @@ import "./Projetos.css";
 export const Projetos = () => {
   const first = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Projeto Acoli",
+      description: "Rede social para a ODS 2 – Fome Zero e Agricultura Sustentável",
       link: "conferir",
-      linkURL: "https://myblogli.vercel.app/",
+      linkURL: "https://acoli.vercel.app/",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "MyBlogLi",
+      description: "Blog Pessoal",
       link: "conferir",
-      linkURL: "https://acoli.vercel.app/",
+      linkURL: "https://myblogli.vercel.app/",
       imgUrl: projImg2,
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   link: "conferir",
-    //   linkURL: "https://acoli.vercel.app/",
-    //   imgUrl: projImg3,
-    // },
   ];
 
   const second = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Dulce Café",
+      description: "Landing page para uma cafeteria fictícia",
       link: "conferir",
-      linkURL: "https://myblogli.vercel.app/",
+      linkURL: "https://dulcecafe.vercel.app/",
       imgUrl: projImg4,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Instatily",
+      description: "Página de login para uma rede social fictícia",
       link: "conferir",
-      linkURL: "https://acoli.vercel.app/",
+      linkURL: "https://login-instatily.vercel.app/",
       imgUrl: projImg5,
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   link: "conferir",
-    //   linkURL: "https://acoli.vercel.app/",
-    //   imgUrl: projImg6,
-    // },
+    {
+      title: "Bookflix",
+      description: "Página para um site de livros",
+      link: "conferir",
+      linkURL: "https://bookflix-project.vercel.app/",
+      imgUrl: projImg6,
+    },
   ];
 
-  const third = [];
+  const third = [
+    {
+      title: "GenerationCare",
+      description: "Sistema de agendamento clínico",
+      link: "conferir",
+      linkURL: "https://github.com/Lihsolive/Projeto_Sistema_de_Agendamento_Bloco1",
+      imgUrl: projImg4,
+    },
+    {
+      title: "Conta Bancária",
+      description: "Sistema bancário",
+      link: "conferir",
+      linkURL: "https://github.com/Lihsolive/ProjetoContaBancaria",
+      imgUrl: projImg5,
+    },
+    {
+      title: "PerfumariaLi",
+      description: "Perfumaria digital",
+      link: "conferir",
+      linkURL: "https://acoli.vercel.app/", //alterar link
+      imgUrl: projImg6,
+    },
+  ];
 
   return (
     <section className="projeto" id="projeto">
@@ -119,7 +139,6 @@ export const Projetos = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>Em breve.</p>
                         <Row>
                           {third.map((projeto, index) => {
                             return <ProjetosCard key={index} {...projeto} />;

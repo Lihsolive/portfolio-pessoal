@@ -65,19 +65,19 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span className="tagline">Bem-vindo ao meu Portfolio!</span>
                   <h1>
-                    {`Hi! I'm Liliam `}{" "}
+                    {`Olá! Eu sou a Liliam e sou  `}{" "}
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='[ "Designer", "Developer"  ]'
+                      data-rotate='[ "Designer", "Desenvolvedora"  ]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
                   <p>
-                    Com sua formação e habilidades, você está bem equipada para
+                    Com a minha formação e habilidade, estou preparada para
                     enfrentar desafios no campo do design e tecnologia.
                   </p>
                   <a href="#projeto">
