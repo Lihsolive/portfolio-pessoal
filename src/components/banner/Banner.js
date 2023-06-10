@@ -77,8 +77,8 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Com a minha formação e habilidade, estou preparada para
-                    enfrentar desafios no campo do design e tecnologia.
+                    Sou formada em Design e amo tecnologia. Desde que me formei, venho estudando programação e participando de bootcamps para aprimorar meus conhecimentos e habilidades. Sou uma pessoa criativa e curiosa que gosta muito de aprender. Estou preparada para
+                    usar o design e tecnologia para criar soluções inovadoras e impactantes.
                   </p>
                   <a href="#projeto">
                     <button>
