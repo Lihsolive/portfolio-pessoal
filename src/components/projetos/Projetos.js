@@ -6,7 +6,7 @@ import { ProjetosCard } from "../projetos-card/ProjetosCard";
 
 import projImg1 from "../../assets/img/acoli.png";
 import projImg2 from "../../assets/img/myBlogLi.png";
-import projImg3 from "../../assets/img/project-img3.png";
+// import projImg3 from "../../assets/img/project-img3.png";
 
 import projImg4 from "../../assets/img/dulceCafe.png";
 import projImg5 from "../../assets/img/instatily.png";
@@ -62,29 +62,29 @@ export const Projetos = () => {
     },
   ];
 
-  const third = [
-    {
-      title: "GenerationCare",
-      description: "Sistema de agendamento clínico",
-      link: "conferir",
-      linkURL: "https://github.com/Lihsolive/Projeto_Sistema_de_Agendamento_Bloco1",
-      imgUrl: projImg4,
-    },
-    {
-      title: "Conta Bancária",
-      description: "Sistema bancário",
-      link: "conferir",
-      linkURL: "https://github.com/Lihsolive/ProjetoContaBancaria",
-      imgUrl: projImg5,
-    },
-    {
-      title: "PerfumariaLi",
-      description: "Perfumaria digital",
-      link: "conferir",
-      linkURL: "https://acoli.vercel.app/", //alterar link
-      imgUrl: projImg6,
-    },
-  ];
+  // const third = [
+  //   {
+  //     title: "GenerationCare",
+  //     description: "Sistema de agendamento clínico",
+  //     link: "conferir",
+  //     linkURL: "https://github.com/Lihsolive/Projeto_Sistema_de_Agendamento_Bloco1",
+  //     imgUrl: projImg4,
+  //   },
+  //   {
+  //     title: "Conta Bancária",
+  //     description: "Sistema bancário",
+  //     link: "conferir",
+  //     linkURL: "https://github.com/Lihsolive/ProjetoContaBancaria",
+  //     imgUrl: projImg5,
+  //   },
+  //   {
+  //     title: "PerfumariaLi",
+  //     description: "Perfumaria digital",
+  //     link: "conferir",
+  //     linkURL: "https://acoli.vercel.app/", //alterar link
+  //     imgUrl: projImg6,
+  //   },
+  // ];
 
   return (
     <section className="projeto" id="projeto">
@@ -140,9 +140,10 @@ export const Projetos = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Row>
-                          {third.map((projeto, index) => {
+                          <p>Em breve.</p>
+                          {/* {third.map((projeto, index) => {
                             return <ProjetosCard key={index} {...projeto} />;
-                          })}
+                          })} */}
                         </Row>
                       </Tab.Pane>
                     </Tab.Content>
