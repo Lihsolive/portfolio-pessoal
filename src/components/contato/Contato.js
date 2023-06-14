@@ -1,11 +1,35 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import { Col, Row } from "react-bootstrap";
+import emailjs from "emailjs-com";
 
 import contactImg from "../../assets/img/contato.svg";
-import "./Contato.css"
+import "./Contato.css";
 
 export const Contato = () => {
+  // função para receber emails com as informações preenchidas no formulário
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "gmailMessage",
+        "template_z49ozvj",
+        formDetails,
+        "_wKuchF557tobvuFG"
+      )
+      .then(
+        (result) => {
+          alert("Mensagem enviada com sucesso!");
+          setFormDetails(formInitalDetails); //para limpar os campos após o envio do formulário
+        },
+        (error) => {
+          alert(error.message);
+        }
+      );
+  };
+
+  // função para que os campos iniciem vazios
   const formInitalDetails = {
     firstName: "",
     lastName: "",
@@ -25,29 +49,6 @@ export const Contato = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.prevetDefault();
-    setButtonText("Enviando...");
-    let response = await fetch("http://localhost:3000/contato", {
-      method: "POST",
-      headers: {
-        "Content-Type": "Aplication/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Enviar");
-    let result = response.json();
-    setFormDetails(formInitalDetails);
-    if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent successfully!" });
-    } else {
-      setStatus({
-        success: false,
-        message: "Something went wrong, please try again later.",
-      });
-    }
-  };
-
   return (
     <section className="contato" id="conectar">
       <Container>
@@ -57,7 +58,7 @@ export const Contato = () => {
           </Col>
           <Col md={6}>
             <h2>Entrar em contato</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={sendEmail}>
               <Row>
                 <Col sm={6} className="px-1">
                   <input
@@ -88,7 +89,7 @@ export const Contato = () => {
                     type="text"
                     value={formDetails.phone}
                     placeholder="Telefone"
-                    onChange={(e) => onFormUpdate("Phone", e.target.value)}
+                    onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </Col>
                 <Col>
