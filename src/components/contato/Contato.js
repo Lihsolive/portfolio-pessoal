@@ -41,12 +41,37 @@ export const Contato = () => {
   const [formDetails, setFormDetails] = useState(formInitalDetails);
   const [buttonText, setButtonText] = useState("Enviar");
   const [status, setStatus] = useState({});
+  const [isDisabled, setIsDisabled] = useState(true); //desabilitar botão enviar
+  const [errorMessage, setErrorMessage] = useState(""); //mensagem de erro
 
+  //função para desabilitar o botão enviar caso existam campos sem preencher
   const onFormUpdate = (category, value) => {
-    setFormDetails({
-      ...formDetails,
-      [category]: value,
+    setFormDetails((prevFormDetails) => {
+      const updatedFormDetails = {
+        ...prevFormDetails,
+        [category]: value,
+      };
+      setIsDisabled(
+        !(
+          updatedFormDetails.firstName &&
+          updatedFormDetails.lastName &&
+          updatedFormDetails.email &&
+          updatedFormDetails.phone &&
+          updatedFormDetails.message
+        )
+      );
+      return updatedFormDetails;
     });
+  };
+
+  //função para aparecer mensagem de erro caso fique algum campo sem preencher 
+  const handleButtonClick = (e) => {
+    if (isDisabled) {
+      alert("Por favor, preencha todos os campos antes de enviar.");
+    } else {
+      setErrorMessage("");
+      sendEmail(e);
+    }
   };
 
   return (
@@ -99,9 +124,12 @@ export const Contato = () => {
                     placeholder="Mensagem"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   />
-                  <button type="submit">
-                    <span>{buttonText}</span>
-                  </button>
+                  <div onClick={handleButtonClick}>
+                    <button type="submit" disabled={isDisabled}>
+                      <span>{buttonText}</span>
+                    </button>
+                  </div>
+                  {errorMessage && <p className="error">{errorMessage}</p>}
                 </Col>
                 {status.message && (
                   <Col>
