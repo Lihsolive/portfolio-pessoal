@@ -23,6 +23,7 @@ export const Contato = () => {
         (result) => {
           // alert("Mensagem enviada com sucesso!");
           setFormDetails(formInitalDetails); //para limpar os campos após o envio do formulário
+          onFormUpdate(); // chame onFormUpdate após redefinir os detalhes do formulário
         },
         (error) => {
           alert(error.message);
@@ -80,8 +81,6 @@ export const Contato = () => {
         progress: undefined,
       });
     } else {
-      // setErrorMessage("");
-      sendEmail(e);
       toast.success("Mensagem enviada com sucesso!", {
         position: "top-right",
         autoClose: 2000,
@@ -92,6 +91,7 @@ export const Contato = () => {
         theme: "colored",
         progress: undefined,
       });
+      sendEmail(e);
     }
   };
 
@@ -146,7 +146,7 @@ export const Contato = () => {
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   />
                   <div>
-                    <button onClick={handleButtonClick}>
+                    <button type="submit" onClick={handleButtonClick}>
                       <span>{buttonText}</span>
                     </button>
                   </div>
