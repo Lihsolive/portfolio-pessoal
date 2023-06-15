@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 import { Container } from "react-bootstrap";
 import { Col, Row } from "react-bootstrap";
 import emailjs from "emailjs-com";
@@ -20,7 +21,7 @@ export const Contato = () => {
       )
       .then(
         (result) => {
-          alert("Mensagem enviada com sucesso!");
+          // alert("Mensagem enviada com sucesso!");
           setFormDetails(formInitalDetails); //para limpar os campos após o envio do formulário
         },
         (error) => {
@@ -64,13 +65,33 @@ export const Contato = () => {
     });
   };
 
-  //função para aparecer mensagem de erro caso fique algum campo sem preencher 
+  //função para aparecer mensagem de erro caso fique algum campo sem preencher
   const handleButtonClick = (e) => {
+    e.preventDefault();
     if (isDisabled) {
-      alert("Por favor, preencha todos os campos antes de enviar.");
+      toast.error("Por favor, preencha todos os campos antes de enviar.", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+      });
     } else {
-      setErrorMessage("");
+      // setErrorMessage("");
       sendEmail(e);
+      toast.success("Mensagem enviada com sucesso!", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+      });
     }
   };
 
@@ -83,7 +104,7 @@ export const Contato = () => {
           </Col>
           <Col md={6}>
             <h2>Entrar em contato</h2>
-            <form onSubmit={sendEmail}>
+            <form>
               <Row>
                 <Col sm={6} className="px-1">
                   <input
@@ -124,8 +145,8 @@ export const Contato = () => {
                     placeholder="Mensagem"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   />
-                  <div onClick={handleButtonClick}>
-                    <button type="submit" disabled={isDisabled}>
+                  <div>
+                    <button onClick={handleButtonClick}>
                       <span>{buttonText}</span>
                     </button>
                   </div>
