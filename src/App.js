@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { NavBar } from "./components/navbar/NavBar";
 import { Banner } from "./components/banner/Banner";
-import { Skills } from "./components/skills/Skills";
+import { Tech } from "./components/tech/Tech"
 import { Projetos } from "./components/projetos/Projetos";
 import { Contato } from "./components/contato/Contato";
 import { Footer } from "./components/footer/Footer";
@@ -17,7 +17,7 @@ function App() {
       <ToastContainer style={{ position: "fixed" }} />
       <NavBar />
       <Banner />
-      <Skills />
+      <Tech />
       <Projetos />
       <Contato />
       <Footer />

@@ -16,9 +16,9 @@ import bootstrap from "../../assets/img/bootstrap.svg";
 
 import colorSharp from "../../assets/img/color-sharp.png";
 
-import "./Skills.css";
+import "./Tech.css";
 
-export const Skills = () => {
+export const Tech = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
