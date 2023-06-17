@@ -5,7 +5,7 @@
   background-color:  #02002c7a ;
 }
 .projeto h2 {
-  font-size: 45px;
+  font-size: 3em;
   font-weight: 700;
   text-align: center;
 }
@@ -79,7 +79,7 @@
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #000000 -5.91%, #4a2fbd 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -137,4 +137,10 @@
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+@media (max-width: 300px) {
+  .projeto h2 {
+    font-size: 2em;
+  }
 }
