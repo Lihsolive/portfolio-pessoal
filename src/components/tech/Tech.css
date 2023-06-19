@@ -1,52 +1,46 @@
-.skill {
-    padding: 0 0 50px 0;
-    position: relative;
-    background: #02002c7a;
-  }
-  .skill-bx {
-    background: #02002c;
-    border-radius: 64px;
-    text-align: center;
-    padding: 60px 50px;
-    margin-top: -60px;
-    box-shadow: 10px 10px 20px #02001d7a;
-  }
-  .skill h2 {
-      font-size: 45px;
-      font-weight: 700;
-  }
-  .skill p {
-      color: #B8B8B8;
-      font-size: 18px;
-      letter-spacing: 0.8px;
-      line-height: 1.5em;
-      margin: 14px 0 75px 0;
-  }
-  .skill-slider {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-  }
-  .skill-slider .item img {
-    width: 50%;
-    margin: 0 auto 15px auto;
-  }
+.tech {
+  position: relative;
+  background: #02002c7a;
+}
+.tech-bx {
+  background: #02002c;
+  border-radius: 64px;
+  text-align: center;
+  padding: 2em;
+  margin-top: -4rem;
+  box-shadow: 10px 10px 20px #02001d7a;
+}
+.tech h2 {
+  padding-top: 4rem !important;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.tech p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 2em;
+}
+.tech-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.tech-slider .item img {
+  width: 50%;
+  margin: 0 auto 1.5rem auto;
+}
 
-  .stats-github {
-    padding: 20px;
-    max-width: 555px;
-    margin: auto;
-    margin-top: 2rem;
-  }
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
 
-  .background-image-left {
-    top: 28%;
-    position: absolute;
-    bottom: 0;
-    width: 40%;
-    z-index: -4;
-  }
+button.react-multiple-carousel__arrow.react-multiple-carousel__arrow {
+  background: transparent;
+}
 
-  button.react-multiple-carousel__arrow.react-multiple-carousel__arrow {
-    background: transparent;
-  }

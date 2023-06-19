@@ -79,9 +79,9 @@
 
 @media (max-width: 300px) {
   .banner .tagline {
-    font-size: 10px;
+    font-size: .7em;
   }
   .banner h1 {
-    font-size: 30px;
+    font-size: 2em;
   }
 }

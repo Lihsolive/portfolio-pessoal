@@ -65,7 +65,7 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Bem-vindo ao meu Portfolio!</span>
+                  <span className="tagline">Bem-vindo(a) ao meu Portfolio!</span>
                   <h1>
                     {`Olá! Eu sou a Liliam e sou  `}{" "}
                     <span
@@ -77,8 +77,7 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Sou formada em Design e amo tecnologia. Desde que me formei, venho estudando programação e participando de bootcamps para aprimorar meus conhecimentos e habilidades. Sou uma pessoa criativa e curiosa que gosta muito de aprender. Estou preparada para
-                    usar o design e tecnologia para criar soluções inovadoras e impactantes.
+                   Programadora FullStack formada em Design, com interesse em desenvolvimento Front-End, buscando uma oportunidade para exercer minha criatividade e habilidade técnica na criação de soluções impactantes e inovadoras com design e tecnologia. 🚀
                   </p>
                   <a href="#projeto">
                     <button>

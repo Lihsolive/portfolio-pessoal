@@ -5,7 +5,7 @@
   background-color:  #02002c7a ;
 }
 .projeto h2 {
-  font-size: 45px;
+  font-size: 3em;
   font-weight: 700;
   text-align: center;
 }
@@ -47,7 +47,7 @@
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(50deg, #ff00cc 2%, #150030 111%);
+  background: linear-gradient(50deg, #d442ab 2%, rgb(55, 0, 72) 111%);
   top: 0;
   left: 0;
   z-index: -1;
@@ -79,7 +79,7 @@
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, rgb(78, 1, 101)  -5.91%, #DB63B9 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -127,7 +127,7 @@
 }
 
 .proj-txtx-link-url:hover {
-  color: rgb(255, 0, 191);
+  color: #DB63B9;
 }
 
 .background-image-right {
@@ -137,4 +137,14 @@
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+@media (max-width: 300px) {
+  .projeto h2 {
+    font-size: 2em;
+  }
+}
+
+p.descricao {
+  margin: 0 !important;
 }

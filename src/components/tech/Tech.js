@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-// import { Container, Row, Col, Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -39,11 +38,11 @@ export const Tech = () => {
   };
 
   return (
-    <section className="skill" id="skills">
+    <section className="tech" id="tech">
       <Container>
         <Row>
           <Col>
-            <div className="skill-bx">
+            <div className="tech-bx">
               <h2>Tecnologias</h2>
               <p>
                 Ao longo dos meus estudos, adquiri conhecimentos e continuo me
@@ -52,7 +51,7 @@ export const Tech = () => {
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                className="skill-slider"
+                className="tech-slider"
               >
                 <div className="item">
                   <img src={javascript} alt="tech" />
@@ -104,20 +103,13 @@ export const Tech = () => {
                   <h5>Bootstrap</h5>
                 </div>
               </Carousel>
-
-              {/* <div className="stats-github">
-                <Image
-                  src="https://camo.githubusercontent.com/7698af53daeddb9b663204e491c74c8ea52bcd632a9569aae639765fa7918821/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d4c6968736f6c697665266c61796f75743d636f6d70616374266c616e67735f636f756e743d37267468656d653d6d69646e696768742d707572706c65"
-                  className="img-responsive"
-                />
-              </div> */}
             </div>
           </Col>
         </Row>
       </Container>
       <img
         className="background-image-left"
-        alt="background-skills"
+        alt="background-tech"
         src={colorSharp}
       />
     </section>
