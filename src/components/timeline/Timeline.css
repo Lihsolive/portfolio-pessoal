@@ -22,7 +22,7 @@
   .timeline-steps .timeline-step:not(:last-child):after {
     content: "";
     display: block;
-    border-top: 0.25rem dotted #f63bc7;
+    border-top: 0.25rem dotted #e33bf6;
     width: 3.46rem;
     position: absolute;
     left: 7.5rem;
@@ -31,7 +31,7 @@
   .timeline-steps .timeline-step:not(:first-child):before {
     content: "";
     display: block;
-    border-top: 0.25rem dotted #4f0051;
+    border-top: 0.25rem dotted #e33bf6;
     width: 3.8125rem;
     position: absolute;
     right: 7.5rem;
@@ -65,42 +65,12 @@
   opacity: 0.5;
 }
 
+.text-muted {
+  color: #b8b8b8 !important;
+}
 
 @media (max-width: 767px) {
   .timeline-steps {
-    flex-direction: column;
-    /* Muda a direção do flexbox para vertical  */
-  }
-  .timeline-steps .timeline-step:not(:last-child):after {
-    content: "";
-    display: block;
-    border-left: 0.25rem dotted #f63bc7; /* Muda a borda de cima para esquerda  */
-    height: 3.46rem;
-    /* usa a mesma medida da largura anterior  */
-    position: absolute;
-    left: 0.3125rem;
-    /* Usa a mesma medida do topo anterior  */
-    top: 7.5rem;
-    /* Usa a mesma medida da esquerda anterior  */
-    width: 1px;
-    /* Define uma largura para o pseudo-elemento  */
-  }
-  .timeline-steps .timeline-step:not(:first-child):before {
-    content: "";
-    display: block;
-    border-left: 0.25rem dotted #4f0051;
-    /* Muda a borda de cima para esquerda  */
-    height: 3.8125rem;
-    /* Usa a mesma medida da largura anterior  */
-    position: absolute;
-    left: 0.3125rem;
-    /* Usa a mesma medida do topo anterior  */
-    bottom: 7.5rem;
-    /* Usa a mesma medida da direita anterior  */
-    width: 1px;
-    /* Define uma largura para o pseudo-elemento  */
+    flex-direction: column; /* Muda a direção do flexbox para vertical  */
   }
 }
-
-
-

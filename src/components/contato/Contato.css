@@ -63,7 +63,6 @@
 }
 .contato form button::before {
   content: "";
-  /* background: #00011E; */
   background: linear-gradient(50deg, #ff00cc 2%, #150030 111%);
   width: 0;
   height: 100%;

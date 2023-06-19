@@ -5,10 +5,9 @@ export const Timeline = () => {
       <div class="container-timeline">
         <div class="row text-center justify-content-center mb-5">
           <div class="col-xl-6 col-lg-8">
-            <h2 class="font-weight-bold">A Company Evolution</h2>
+            <h2 class="font-weight-bold">Minha trajetória</h2>
             <p class="text-muted">
-              We’re very proud of the path we’ve taken. Explore the history that
-              made us the company we are today.
+              Veja um pouquinho da minha história na tecnologia, com os principais paços que dei até o momento..
             </p>
           </div>
         </div>
@@ -22,12 +21,12 @@ export const Timeline = () => {
                   data-trigger="hover"
                   data-placement="top"
                   title
-                  data-content="And here's some amazing content. It's very engaging. Right?"
-                  data-original-title="2003"
+                  data-content="descricao"
+                  data-original-title="2018"
                 >
                   <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2003</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Favland Founded</p>
+                  <p class="h6 mt-3 mb-1">2018</p>
+                  <p class="h6 text-muted mb-0 mb-lg-0">Ingresso na faculdade de Design</p>
                 </div>
               </div>
               <div class="timeline-step">
@@ -37,12 +36,12 @@ export const Timeline = () => {
                   data-trigger="hover"
                   data-placement="top"
                   title
-                  data-content="And here's some amazing content. It's very engaging. Right?"
-                  data-original-title="2004"
+                  data-content="descricao"
+                  data-original-title="2021"
                 >
                   <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2004</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Launched Trello</p>
+                  <p class="h6 mt-3 mb-1">2021</p>
+                  <p class="h6 text-muted mb-0 mb-lg-0">Início dos estudos em UX/UI e web design</p>
                 </div>
               </div>
               <div class="timeline-step">
@@ -52,12 +51,12 @@ export const Timeline = () => {
                   data-trigger="hover"
                   data-placement="top"
                   title
-                  data-content="And here's some amazing content. It's very engaging. Right?"
-                  data-original-title="2005"
+                  data-content="descricao"
+                  data-original-title="2022"
                 >
                   <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2005</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Launched Messanger</p>
+                  <p class="h6 mt-3 mb-1">2022</p>
+                  <p class="h6 text-muted mb-0 mb-lg-0">Participação do programa Desenvolve promovido pelo grupo Boticário na trilha Full Stack (NodeJS e React)</p>
                 </div>
               </div>
               <div class="timeline-step">
@@ -67,12 +66,12 @@ export const Timeline = () => {
                   data-trigger="hover"
                   data-placement="top"
                   title
-                  data-content="And here's some amazing content. It's very engaging. Right?"
-                  data-original-title="2010"
+                  data-content="descricao"
+                  data-original-title="2023"
                 >
                   <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2010</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Open New Branch</p>
+                  <p class="h6 mt-3 mb-1">2023</p>
+                  <p class="h6 text-muted mb-0 mb-lg-0">Participação do bootcamp da Generation Brasil na trilha Full Stack (Java e React)</p>
                 </div>
               </div>
               <div class="timeline-step mb-0">
@@ -82,12 +81,12 @@ export const Timeline = () => {
                   data-trigger="hover"
                   data-placement="top"
                   title
-                  data-content="And here's some amazing content. It's very engaging. Right?"
-                  data-original-title="2020"
+                  data-content="descricao"
+                  data-original-title="2023"
                 >
                   <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2020</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">In Fortune 500</p>
+                  <p class="h6 mt-3 mb-1">2023</p>
+                  <p class="h6 text-muted mb-0 mb-lg-0">Buscando oportunidade para atuar como Desenvolvedora</p>
                 </div>
               </div>
             </div>
