@@ -2,7 +2,7 @@ import { Col, Container, Row, Tab, Nav } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
 
-import { ProjetosCard } from "../projetos-card/ProjetosCard";
+import { ProjetosCard } from "./ProjetosCard";
 
 import projImg1 from "../../assets/img/acoli.png";
 import projImg2 from "../../assets/img/myBlogLi.png";
