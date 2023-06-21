@@ -1,6 +1,21 @@
-.container-timeline {
-  padding: 5rem;
-  background-color: #02001d7a;
+.timeline {
+  padding: 5rem 0;
+  background: #02002c7a;
+}
+.timeline-title {
+  padding-top: 4rem !important;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.timeline-subtitle {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 2em;
+  text-align: center;
 }
 
 .timeline-steps {

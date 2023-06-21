@@ -1,0 +1,68 @@
+.card-body {
+  background-color: transparent;
+}
+
+.custom-card {
+  border: none;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.img-container {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 10px 10px 20px #02001d7a;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90.21deg, rgb(78, 1, 101)  -5.91%, #DB63B9 111.58%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.overlay:hover {
+  opacity: .85;
+}
+
+.tech-icons {
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.tech-icons-item {
+  margin-right: 1em;
+  width: 1.5rem;
+}
+
+.titulo {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem;
+}
+
+@media (max-width: 1250px) {
+  .card-container {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .card-container {
+    padding: 3rem 1rem;
+  }
+}

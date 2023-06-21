@@ -2,16 +2,16 @@ import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import javascript from "../../assets/img/javascript.svg";
-import typescript from "../../assets/img/typescript.svg";
-import java from "../../assets/img/java.svg";
-import mysql from "../../assets/img/mysql.svg";
-import node from "../../assets/img/nodejs.svg";
-import react from "../../assets/img/react.svg";
-import spring from "../../assets/img/spring.svg";
-import html from "../../assets/img/html5.svg";
-import css from "../../assets/img/css3.svg";
-import bootstrap from "../../assets/img/bootstrap.svg";
+import javascript from "../../assets/icons/javascript.svg";
+import typescript from "../../assets/icons/typescript.svg";
+import java from "../../assets/icons/java.svg";
+import mysql from "../../assets/icons/mysql.svg";
+import node from "../../assets/icons/nodejs.svg";
+import react from "../../assets/icons/react.svg";
+import spring from "../../assets/icons/spring.svg";
+import html from "../../assets/icons/html5.svg";
+import css from "../../assets/icons/css3.svg";
+import bootstrap from "../../assets/icons/bootstrap.svg";
 
 import colorSharp from "../../assets/img/color-sharp.png";
 
@@ -43,8 +43,8 @@ export const Tech = () => {
         <Row>
           <Col>
             <div className="tech-bx">
-              <h2>Tecnologias</h2>
-              <p>
+              <h2 className="tech-title">Tecnologias</h2>
+              <p className="tech-subtitle">
                 Ao longo dos meus estudos, adquiri conhecimentos e continuo me
                 desenvolvendo nas seguintes tecnologias:
               </p>

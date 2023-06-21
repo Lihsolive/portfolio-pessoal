@@ -1,9 +1,9 @@
 import { Container, Col, Row } from "react-bootstrap";
 
 import logo from "../../assets/img/logo.svg";
-import linkedinIcon from "../../assets/img/linkedin-icon.svg";
-import githubIcon from "../../assets/img/github-icon.svg";
-import webIcon from "../../assets/img/web-icon.svg";
+import linkedinIcon from "../../assets/icons/linkedin-icon.svg";
+import githubIcon from "../../assets/icons/github-icon.svg";
+import webIcon from "../../assets/icons/web-icon.svg";
 
 import "./Footer.css";
 

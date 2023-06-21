@@ -4,9 +4,9 @@ import Container from "react-bootstrap/Container";
 import { Navbar, Nav } from "react-bootstrap";
 
 import logo from "../../assets/img/logo.svg";
-import linkedinIcon from "../../assets/img/linkedin-icon.svg";
-import githubIcon from "../../assets/img/github-icon.svg";
-import webIcon from "../../assets/img/web-icon.svg";
+import linkedinIcon from "../../assets/icons/linkedin-icon.svg";
+import githubIcon from "../../assets/icons/github-icon.svg";
+import webIcon from "../../assets/icons/web-icon.svg";
 
 import "./NavBar.css";
 
@@ -99,9 +99,9 @@ export const NavBar = () => {
               Tecnologias
             </Nav.Link>
             <Nav.Link
-              href="#projeto"
+              href="#projects"
               className={
-                activeLink === "projetos" ? "active navbar-link" : "navbar-link"
+                activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("projetos")}
             >
