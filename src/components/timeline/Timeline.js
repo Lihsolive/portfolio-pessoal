@@ -7,7 +7,7 @@ export const Timeline = () => {
           <div class="col-xl-6 col-lg-8">
             <h2 class="font-weight-bold">Minha trajetória</h2>
             <p class="text-muted">
-              Veja um pouquinho da minha história na tecnologia, com os principais paços que dei até o momento..
+              Veja um pouquinho da minha história na tecnologia, com os principais passos dados até o momento.
             </p>
           </div>
         </div>
