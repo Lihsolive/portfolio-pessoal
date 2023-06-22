@@ -22,7 +22,9 @@ function TabProjetos() {
                   }
                 >
                   <h2 className="proj-title">Projetos</h2>
-                  <p className="proj-subtitle">Principais projetos desenvolvidos até o momento.</p>
+                  <p className="proj-subtitle">
+                    Principais projetos desenvolvidos até o momento.
+                  </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -57,7 +59,7 @@ function TabProjetos() {
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Row>
-                        <ProjetosBack />
+                          <ProjetosBack />
                         </Row>
                       </Tab.Pane>
                     </Tab.Content>

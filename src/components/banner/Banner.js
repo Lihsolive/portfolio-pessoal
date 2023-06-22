@@ -79,7 +79,7 @@ export const Banner = () => {
                   <p>
                    Programadora FullStack formada em Design, com interesse em desenvolvimento Front-End, buscando uma oportunidade para exercer minha criatividade e habilidade técnica na criação de soluções impactantes e inovadoras com design e tecnologia. 🚀
                   </p>
-                  <a href="#projeto">
+                  <a href="#projects">
                     <button>
                       Ver Projetos <ArrowRightCircle size={25} />
                     </button>

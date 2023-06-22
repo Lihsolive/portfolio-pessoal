@@ -96,7 +96,7 @@ export const Contato = () => {
   };
 
   return (
-    <section className="contato" id="conectar">
+    <section className="connect" id="connect">
       <Container>
         <Row className="align-items-center">
           <Col md={6}>

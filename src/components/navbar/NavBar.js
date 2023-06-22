@@ -110,13 +110,13 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <Nav.Link
-              href="#conectar"
+              href="#connect"
               className={
-                activeLink === "conectar" ? "active navbar-link" : "navbar-link"
+                activeLink === "connect" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("conectar")}
+              onClick={() => onUpdateActiveLink("connect")}
             >
-              <button className="vvd">
+              <button className="btn-connect">
                 <span>Conectar</span>
               </button>
             </Nav.Link>

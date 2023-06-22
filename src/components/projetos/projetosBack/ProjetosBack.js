@@ -17,15 +17,36 @@ function ProjetosBack() {
             <div className="img-container">
               <Card.Img variant="top" src={projImg1} />
               <div className="overlay">
-                <div className="text">Primeiro card</div>
+                <h4 className="overlay-titulo">Tecnologias usadas:</h4>
+                <div className="tech-icons">
+                  <img className="tech-icons-item" src={githubIcon} alt="" />
+                  <img className="tech-icons-item" src={githubIcon} alt="" />
+                  <img className="tech-icons-item" src={githubIcon} alt="" />
+                  <img className="tech-icons-item" src={githubIcon} alt="" />
+                </div>
               </div>
             </div>
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
+              <Card.Title className="card-title">Card Title</Card.Title>
+              <Card.Text className="card-description">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
+              <div className="buttons">
+                <button className="btn-card">
+                  <a
+                    href="https://github.com/Lihsolive/projeto-acoli-react"
+                    target="blanck"
+                  >
+                    github
+                  </a>
+                </button>
+                <button className="btn-card">
+                  <a href="https://acoli.vercel.app/" target="blanck">
+                    demo
+                  </a>
+                </button>
+              </div>
             </Card.Body>
           </Card>
         </Col>
@@ -36,7 +57,7 @@ function ProjetosBack() {
             <div className="img-container">
               <Card.Img variant="top" src={projImg2} />
               <div className="overlay">
-                <h4 className="titulo">Tecnologias</h4>
+                <h4 className="overlay-titulo">Tecnologias usadas:</h4>
                 <div className="tech-icons">
                   <img className="tech-icons-item" src={githubIcon} alt="" />
                   <img className="tech-icons-item" src={githubIcon} alt="" />
@@ -46,11 +67,26 @@ function ProjetosBack() {
               </div>
             </div>
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
+              <Card.Title className="card-title">Card Title</Card.Title>
+              <Card.Text className="card-description">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
+              <div className="buttons">
+                <button className="btn-card">
+                  <a
+                    href="https://github.com/Lihsolive/projeto-acoli-react"
+                    target="blanck"
+                  >
+                    github
+                  </a>
+                </button>
+                <button className="btn-card">
+                  <a href="https://acoli.vercel.app/" target="blanck">
+                    demo
+                  </a>
+                </button>
+              </div>
             </Card.Body>
           </Card>
         </Col>
@@ -61,20 +97,41 @@ function ProjetosBack() {
             <div className="img-container">
               <Card.Img variant="top" src={projImg2} />
               <div className="overlay">
-                <div className="text">Terceiro card</div>
+                <h4 className="overlay-titulo">Tecnologias usadas:</h4>
+                <div className="tech-icons">
+                  <img className="tech-icons-item" src={githubIcon} alt="" />
+                  <img className="tech-icons-item" src={githubIcon} alt="" />
+                  <img className="tech-icons-item" src={githubIcon} alt="" />
+                  <img className="tech-icons-item" src={githubIcon} alt="" />
+                </div>
               </div>
             </div>
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
+              <Card.Title className="card-title">Card Title</Card.Title>
+              <Card.Text className="card-description">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
+              <div className="buttons">
+                <button className="btn-card">
+                  <a
+                    href="https://github.com/Lihsolive/projeto-acoli-react"
+                    target="blanck"
+                  >
+                    github
+                  </a>
+                </button>
+                <button className="btn-card">
+                  <a href="https://acoli.vercel.app/" target="blanck">
+                    demo
+                  </a>
+                </button>
+              </div>
             </Card.Body>
           </Card>
         </Col>
       </Row>
     </section>
   );
-};
+}
 export default ProjetosBack;

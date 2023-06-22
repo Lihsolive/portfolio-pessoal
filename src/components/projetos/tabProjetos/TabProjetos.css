@@ -1,9 +1,10 @@
 .projects {
-    padding: 80px 0;
+    padding: 1.5rem 0;
     position: relative;
-    background-color:  #02002c7a ;
+    background-color:  #02002c7a;
   }
   .proj-title {
+    margin-top: 2rem;
     font-size: 3em;
     font-weight: 700;
     text-align: center;
@@ -18,9 +19,9 @@
     width: 56%;
   }
   .projects .nav.nav-pills {
-    width: 72%;
+    width: 85%;
     margin: 0 auto;
-    border-radius: 50px;
+    border-radius: 3rem;
     background-color: rgb(255 255 255 / 10%);
     overflow: hidden;
   }
