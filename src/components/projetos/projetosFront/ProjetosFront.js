@@ -1,9 +1,13 @@
 import { Card, Row, Col } from "react-bootstrap";
 import "animate.css";
 
-import githubIcon from "../../../assets/icons/github.svg";
-import projImg1 from "../../../assets/img/acoli.png";
-import projImg2 from "../../../assets/img/myBlogLi.png";
+import html from "../../../assets/icons/html5-icon.svg";
+import css from "../../../assets/icons/css3-icon.svg";
+import javascript from "../../../assets/icons/javascript-icon.svg";
+
+import dulceCafe from "../../../assets/img/dulceCafe.png";
+import instatily from "../../../assets/img/instatily.png";
+import bookflix from "../../../assets/img/bookflix.png";
 
 import "../projetosFull/ProjetosFull.css";
 
@@ -15,34 +19,32 @@ function ProjetosFront() {
         <Col xs={12} sm={4}>
           <Card className="custom-card m-3">
             <div className="img-container">
-              <Card.Img variant="top" src={projImg1} />
+              <Card.Img variant="top" src={dulceCafe} />
               <div className="overlay">
                 <h4 className="overlay-titulo">Tecnologias usadas:</h4>
                 <div className="tech-icons">
-                  <img className="tech-icons-item" src={githubIcon} alt="" />
-                  <img className="tech-icons-item" src={githubIcon} alt="" />
-                  <img className="tech-icons-item" src={githubIcon} alt="" />
-                  <img className="tech-icons-item" src={githubIcon} alt="" />
+                  <img className="tech-icons-item" src={html} alt="" />
+                  <img className="tech-icons-item" src={css} alt="" />
+                  <img className="tech-icons-item" src={javascript} alt="" />
                 </div>
               </div>
             </div>
             <Card.Body>
-              <Card.Title className="card-title">Card Title</Card.Title>
+              <Card.Title className="card-title">Dulce Café</Card.Title>
               <Card.Text className="card-description">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              Landing page para uma cafeteria fictícia.
               </Card.Text>
               <div className="buttons">
                 <button className="btn-card">
                   <a
-                    href="https://github.com/Lihsolive/projeto-acoli-react"
+                    href="https://github.com/Lihsolive/dulceCafe"
                     target="blanck"
                   >
                     github
                   </a>
                 </button>
                 <button className="btn-card">
-                  <a href="https://acoli.vercel.app/" target="blanck">
+                  <a href="https://dulcecafe.vercel.app/" target="blanck">
                     demo
                   </a>
                 </button>
@@ -55,34 +57,32 @@ function ProjetosFront() {
         <Col xs={12} sm={4}>
           <Card className="custom-card m-3">
             <div className="img-container">
-              <Card.Img variant="top" src={projImg2} />
+              <Card.Img variant="top" src={instatily} />
               <div className="overlay">
                 <h4 className="overlay-titulo">Tecnologias usadas:</h4>
                 <div className="tech-icons">
-                  <img className="tech-icons-item" src={githubIcon} alt="" />
-                  <img className="tech-icons-item" src={githubIcon} alt="" />
-                  <img className="tech-icons-item" src={githubIcon} alt="" />
-                  <img className="tech-icons-item" src={githubIcon} alt="" />
+                  <img className="tech-icons-item" src={html} alt="" />
+                  <img className="tech-icons-item" src={css} alt="" />
+                  <img className="tech-icons-item" src={javascript} alt="" />
                 </div>
               </div>
             </div>
             <Card.Body>
-              <Card.Title className="card-title">Card Title</Card.Title>
+              <Card.Title className="card-title">Instatily</Card.Title>
               <Card.Text className="card-description">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              Página de login para uma rede social fictícia.
               </Card.Text>
               <div className="buttons">
                 <button className="btn-card">
                   <a
-                    href="https://github.com/Lihsolive/projeto-acoli-react"
+                    href="https://github.com/Lihsolive/login-Instatily"
                     target="blanck"
                   >
                     github
                   </a>
                 </button>
                 <button className="btn-card">
-                  <a href="https://acoli.vercel.app/" target="blanck">
+                  <a href="https://login-instatily.vercel.app/" target="blanck">
                     demo
                   </a>
                 </button>
@@ -95,34 +95,31 @@ function ProjetosFront() {
         <Col xs={12} sm={4}>
           <Card className="custom-card m-3">
             <div className="img-container">
-              <Card.Img variant="top" src={projImg1} />
+              <Card.Img variant="top" src={bookflix} />
               <div className="overlay">
                 <h4 className="overlay-titulo">Tecnologias usadas:</h4>
                 <div className="tech-icons">
-                  <img className="tech-icons-item" src={githubIcon} alt="" />
-                  <img className="tech-icons-item" src={githubIcon} alt="" />
-                  <img className="tech-icons-item" src={githubIcon} alt="" />
-                  <img className="tech-icons-item" src={githubIcon} alt="" />
+                  <img className="tech-icons-item" src={html} alt="" />
+                  <img className="tech-icons-item" src={css} alt="" />
                 </div>
               </div>
             </div>
             <Card.Body>
-              <Card.Title className="card-title">Card Title</Card.Title>
+              <Card.Title className="card-title">bookflix</Card.Title>
               <Card.Text className="card-description">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              Página para um site de livros.
               </Card.Text>
               <div className="buttons">
                 <button className="btn-card">
                   <a
-                    href="https://github.com/Lihsolive/projeto-acoli-react"
+                    href="https://github.com/Lihsolive/Bookflix"
                     target="blanck"
                   >
                     github
                   </a>
                 </button>
                 <button className="btn-card">
-                  <a href="https://acoli.vercel.app/" target="blanck">
+                  <a href="https://bookflix-project.vercel.app/" target="blanck">
                     demo
                   </a>
                 </button>
