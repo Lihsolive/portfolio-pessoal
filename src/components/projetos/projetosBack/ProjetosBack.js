@@ -1,7 +1,7 @@
 import { Card, Row, Col } from "react-bootstrap";
 import "animate.css";
 
-import githubIcon from "../../../assets/icons/github-icon.svg";
+import githubIcon from "../../../assets/icons/github.svg";
 import projImg1 from "../../../assets/img/acoli.png";
 import projImg2 from "../../../assets/img/myBlogLi.png";
 
