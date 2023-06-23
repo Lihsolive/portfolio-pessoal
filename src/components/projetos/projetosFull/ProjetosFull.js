@@ -1,6 +1,9 @@
 import { Card, Row, Col } from "react-bootstrap";
 import "animate.css";
-
+// img projetos
+import acoli from "../../../assets/img/acoli.png";
+import myBlogLi from "../../../assets/img/myBlogLi.png";
+// icones overlay
 import java from "../../../assets/icons/java-icon.svg";
 import javascript from "../../../assets/icons/javascript-icon.svg";
 import mysql from "../../../assets/icons/mysql-icon.svg";
@@ -8,9 +11,6 @@ import node from "../../../assets/icons/nodejs.svg";
 import react from "../../../assets/icons/react.svg";
 import spring from "../../../assets/icons/spring-icon.svg";
 import typescript from "../../../assets/icons/typescript-icon.svg";
-
-import acoli from "../../../assets/img/acoli.png";
-import myBlogLi from "../../../assets/img/myBlogLi.png";
 
 import "./ProjetosFull.css";
 
@@ -23,18 +23,18 @@ function ProjetosFull() {
           <Card className="custom-card m-3">
             {/* img do projeto */}
             <div className="img-container">
-              <Card.Img variant="top" src={acoli} />
-            {/* conteúdo overlay*/}
+              <Card.Img variant="top" src={acoli} alt="imagem projeto acoli" />
+              {/* conteúdo overlay*/}
               <div className="overlay">
                 <h4 className="overlay-titulo">Tecnologias usadas:</h4>
                 <div className="tech-icons">
-                  <img className="tech-icons-item" src={java} alt="java icon" />
-                  <img className="tech-icons-item" src={spring} alt="spring icon" />
-                  <img className="tech-icons-item" src={mysql} alt="mysql icon" />
-                  <img className="tech-icons-item" src={javascript} alt="javascript icon" />
-                  <img className="tech-icons-item" src={node} alt="javascript icon" />
-                  <img className="tech-icons-item" src={react} alt="react icon" />
-                  <img className="tech-icons-item" src={typescript} alt="typescript icon" />
+                  <img className="tech-icons-item" src={java} alt="java" />
+                  <img className="tech-icons-item" src={spring} alt="spring" />
+                  <img className="tech-icons-item" src={mysql} alt="mysql" />
+                  <img className="tech-icons-item" src={javascript} alt="javascript"/>
+                  <img className="tech-icons-item" src={node} alt="node" />
+                  <img className="tech-icons-item" src={react} alt="react" />
+                  <img className="tech-icons-item" src={typescript} alt="typescript" />
                 </div>
               </div>
             </div>
@@ -42,15 +42,13 @@ function ProjetosFull() {
             <Card.Body>
               <Card.Title className="card-title">Projeto Acoli</Card.Title>
               <Card.Text className="card-description">
-              Rede social baseada na ODS (Objetivos de Desenvolvimento Sustentável da ONU) 2 – Fome Zero e Agricultura Sustentável.
+                Rede social baseada na ODS (Objetivos de Desenvolvimento
+                Sustentável da ONU) 2 – Fome Zero e Agricultura Sustentável.
               </Card.Text>
               {/* botões */}
               <div className="buttons">
                 <button className="btn-card">
-                  <a
-                    href="https://github.com/Lihsolive/projeto-acoli-react"
-                    target="blanck"
-                  >
+                  <a href="https://github.com/Lihsolive/projeto-acoli-react" target="blanck">
                     github
                   </a>
                 </button>
@@ -69,34 +67,33 @@ function ProjetosFull() {
           <Card className="custom-card m-3">
             {/* img do projeto */}
             <div className="img-container">
-              <Card.Img variant="top" src={myBlogLi} />
+              <Card.Img variant="top" src={myBlogLi} alt="imagem myBlogLi"/>
               {/* conteúdo overlay */}
               <div className="overlay">
                 <h4 className="overlay-titulo">Tecnologias usadas:</h4>
                 <div className="tech-icons">
-                  <img className="tech-icons-item" src={java} alt="java icon" />
-                  <img className="tech-icons-item" src={spring} alt="spring icon" />
-                  <img className="tech-icons-item" src={mysql} alt="mysql icon" />
-                  <img className="tech-icons-item" src={javascript} alt="javascript icon" />
-                  <img className="tech-icons-item" src={node} alt="javascript icon" />
-                  <img className="tech-icons-item" src={react} alt="react icon" />
-                  <img className="tech-icons-item" src={typescript} alt="typescript icon" />
+                  <img className="tech-icons-item" src={java}alt="java" />
+                  <img className="tech-icons-item" src={spring} alt="spring" />
+                  <img className="tech-icons-item" src={mysql} alt="mysql" />
+                  <img className="tech-icons-item" src={javascript} alt="javascript" />
+                  <img className="tech-icons-item" src={node} alt="node" />
+                  <img className="tech-icons-item" src={react} alt="react" />
+                  <img className="tech-icons-item" src={typescript} alt="typescript" />
                 </div>
               </div>
             </div>
-              {/* conteúdo do card */}
+            {/* conteúdo do card */}
             <Card.Body>
               <Card.Title className="card-title">MyBlogLI</Card.Title>
               <Card.Text className="card-description">
-              Blog pessoal desenvolvido durante bootcamp para estudo.<br/><br/>
+                Blog pessoal desenvolvido durante bootcamp para estudo.
+                <br />
+                <br />
               </Card.Text>
               {/* botoes */}
               <div className="buttons">
                 <button className="btn-card">
-                  <a
-                    href="https://github.com/Lihsolive/blogPessoal-react"
-                    target="blanck"
-                  >
+                  <a href="https://github.com/Lihsolive/blogPessoal-react" target="blanck">
                     github
                   </a>
                 </button>

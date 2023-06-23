@@ -1,7 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+// detalhe do fundo
+import colorSharp from "../../assets/img/color-sharp.png";
+// logos tecnologias
 import javascript from "../../assets/icons/javascript.svg";
 import typescript from "../../assets/icons/typescript.svg";
 import java from "../../assets/icons/java.svg";
@@ -12,9 +14,7 @@ import spring from "../../assets/icons/spring.svg";
 import html from "../../assets/icons/html5.svg";
 import css from "../../assets/icons/css3.svg";
 import bootstrap from "../../assets/icons/bootstrap.svg";
-
-import colorSharp from "../../assets/img/color-sharp.png";
-
+// css
 import "./Tech.css";
 
 export const Tech = () => {

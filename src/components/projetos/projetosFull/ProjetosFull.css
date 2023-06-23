@@ -1,3 +1,8 @@
+.txtx {
+  text-align: center;
+  color: #b8b8b8;
+}
+
 .card-body {
   background-color: transparent;
   padding: 1rem 0;
@@ -22,7 +27,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90.21deg, rgb(0, 0, 0)  -5.91%, #4e008a 111.58%);
+  background: linear-gradient(90.21deg, rgb(0, 0, 0) -5.91%, #4e008a 111.58%);
   opacity: 0;
   transition: opacity 0.3s;
   display: flex;
@@ -32,19 +37,19 @@
 }
 
 .overlay:hover {
-  opacity: .85;
+  opacity: 0.85;
 }
 
 .overlay-titulo {
   text-align: center;
-  padding: 0em .5em 0;
+  padding: 0em 0.5em 0;
   font-size: 1rem;
 }
 
 .tech-icons {
   padding: 1em 0;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .tech-icons-item {
@@ -76,7 +81,6 @@
   position: relative;
   transition: 0.3s ease-in-out;
   background: rgba(255, 255, 255, 0.1);
-
 }
 .btn-card a {
   font-weight: 700;

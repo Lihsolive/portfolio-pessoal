@@ -49,7 +49,8 @@ function Timeline() {
                   <div class="inner-circle"></div>
                   <p class="h6 mt-3 mb-1">ago/2021</p>
                   <p class="h6 text-muted mb-0 mb-lg-0">
-                    Início dos estudos em UX/UI e desenvolvimento web de forma autodidata
+                    Início dos estudos em UX/UI e desenvolvimento web de forma
+                    autodidata
                   </p>
                 </div>
               </div>
@@ -85,7 +86,9 @@ function Timeline() {
                   <div class="inner-circle"></div>
                   <p class="h6 mt-3 mb-1">jan/2022</p>
                   <p class="h6 text-muted mb-0 mb-lg-0">
-                    Selecionada para o programa Desenvolve promovido pelo grupo Boticário em parceria com a plataforma Alura para a trilha Full Stack (NodeJS e React)
+                    Selecionada para o programa Desenvolve promovido pelo grupo
+                    Boticário em parceria com a plataforma Alura para a trilha
+                    Full Stack (NodeJS e React)
                   </p>
                 </div>
               </div>
