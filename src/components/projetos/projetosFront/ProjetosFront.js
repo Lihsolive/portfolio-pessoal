@@ -113,7 +113,7 @@ function ProjetosFront() {
             </div>
             {/* conteudo card */}
             <Card.Body>
-              <Card.Title className="card-title">bookflix</Card.Title>
+              <Card.Title className="card-title">Bookflix</Card.Title>
               <Card.Text className="card-description">
                 Página para um site de livros.
               </Card.Text>
