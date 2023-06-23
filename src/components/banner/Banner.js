@@ -4,7 +4,8 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
 
-import headerImg from "../../assets/img/astronauta.svg";
+// import headerImg from "../../assets/img/astronauta.svg";
+import headerImg from "../../assets/img/disco-voador.svg";
 
 import "./Banner.css";
 
