@@ -81,11 +81,11 @@
 }
 
 .timeline-steps .timeline-step:nth-child(6) .inner-circle {
-  background-color: #db50e0;
+  background-color: #c6d8ff;
 }
 
 .timeline-steps .timeline-step:nth-child(6) .inner-circle::before {
-  background-color: #fc51f9;
+  background-color: #bac6fd;
 }
 
 
