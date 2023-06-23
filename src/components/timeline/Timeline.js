@@ -29,7 +29,7 @@ function Timeline() {
                   data-original-title="2018"
                 >
                   <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">fev/2018</p>
+                  <p class="h6 mt-3 mb-1">2018</p>
                   <p class="h6 text-muted mb-0 mb-lg-0">
                     Ingresso na graduação em Design
                   </p>
@@ -47,10 +47,9 @@ function Timeline() {
                   data-original-title="2021"
                 >
                   <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">ago/2021</p>
+                  <p class="h6 mt-3 mb-1">2020</p>
                   <p class="h6 text-muted mb-0 mb-lg-0">
-                    Início dos estudos em UX/UI e desenvolvimento web de forma
-                    autodidata
+                    Descobrindo o desenvolvimento web através de um projeto acadêmico de recriação do site de uma ong
                   </p>
                 </div>
               </div>
@@ -66,9 +65,9 @@ function Timeline() {
                   data-original-title="2021"
                 >
                   <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">dez/2021</p>
+                  <p class="h6 mt-3 mb-1">2021</p>
                   <p class="h6 text-muted mb-0 mb-lg-0">
-                    Conclusão da graduação
+                    Dando continuidade aos estudos em desenvolvimento web de forma autodidata
                   </p>
                 </div>
               </div>
@@ -84,11 +83,10 @@ function Timeline() {
                   data-original-title="2022"
                 >
                   <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">jan/2022</p>
+                  <p class="h6 mt-3 mb-1">2022</p>
                   <p class="h6 text-muted mb-0 mb-lg-0">
-                    Selecionada para o programa Desenvolve promovido pelo grupo
-                    Boticário em parceria com a plataforma Alura para a trilha
-                    Full Stack (NodeJS e React)
+                    Início do programa Desenvolve realizado pelo grupo
+                    Boticário participando da trilha Full Stack (NodeJS e React)
                   </p>
                 </div>
               </div>
@@ -106,8 +104,7 @@ function Timeline() {
                   <div class="inner-circle"></div>
                   <p class="h6 mt-3 mb-1">2023</p>
                   <p class="h6 text-muted mb-0 mb-lg-0">
-                    Participação do bootcamp da Generation Brasil na trilha Full
-                    Stack (Java e React)
+                    Participação do bootcamp da Generation Brasil na trilha Full Stack (Java e React)
                   </p>
                 </div>
               </div>

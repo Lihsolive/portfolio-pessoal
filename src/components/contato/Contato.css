@@ -61,7 +61,7 @@
 }
 .connect form button::before {
   content: "";
-  background: linear-gradient(50deg, #ff00cc 2%, #150030 111%);
+  background: linear-gradient(50deg, #d754b2 2%, rgb(55, 0, 72) 111%);
   width: 0;
   height: 100%;
   position: absolute;

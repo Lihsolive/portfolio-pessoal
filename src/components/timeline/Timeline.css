@@ -37,7 +37,7 @@
   .timeline-steps .timeline-step:not(:last-child):after {
     content: "";
     display: block;
-    border-top: 0.25rem dotted #e33bf6;
+    border-top: 0.25rem dotted #A863DE;
     width: 3.46rem;
     position: absolute;
     left: 7.5rem;
@@ -46,7 +46,7 @@
   .timeline-steps .timeline-step:not(:first-child):before {
     content: "";
     display: block;
-    border-top: 0.25rem dotted #e33bf6;
+    border-top: 0.25rem dotted #A863DE;
     width: 3.8125rem;
     position: absolute;
     right: 7.5rem;
@@ -66,12 +66,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #e33bf6;
+  background-color: #A863DE;
 }
 
 .timeline-steps .timeline-content .inner-circle:before {
   content: "";
-  background-color: #bb3bf6;
+  background-color: #8F4FC1;
   display: inline-block;
   height: 3rem;
   width: 3rem;
@@ -79,6 +79,15 @@
   border-radius: 6.25rem;
   opacity: 0.5;
 }
+
+.timeline-steps .timeline-step:nth-child(6) .inner-circle {
+  background-color: #db50e0;
+}
+
+.timeline-steps .timeline-step:nth-child(6) .inner-circle::before {
+  background-color: #fc51f9;
+}
+
 
 .text-muted {
   color: #b8b8b8 !important;
