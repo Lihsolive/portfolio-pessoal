@@ -78,7 +78,8 @@ span.navbar-text {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
     hue-rotate(346deg) brightness(95%) contrast(86%);
 }
-.navbar-text button {
+
+.btn-connect{
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
@@ -90,13 +91,13 @@ span.navbar-text {
   background-color: transparent;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button span {
+.btn-connect {
   z-index: 1;
 }
-.navbar-text button::before {
+
+.btn-connect::before {
   content: "";
   width: 0%;
-  /* height: 100%; */
   position: absolute;
   background-color: #fff;
   border-radius: 20px;
@@ -105,18 +106,20 @@ span.navbar-text {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button:hover {
+
+.btn-connect:hover {
   color: #00011e;
 }
-.navbar-text button:hover::before {
+
+.btn-connect:hover::before {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-button.navbar-toggler,
-button.navbar-toggler:focus {
+.btn-connect .navbar-toggler,
+.btn-connect .navbar-toggler:focus {
   border: none;
   outline: none;
   box-shadow: none;

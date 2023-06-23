@@ -4,13 +4,13 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { NavBar } from "./components/navbar/NavBar";
 import { Banner } from "./components/banner/Banner";
-import { Timeline } from "./components/timeline/Timeline";
+import Timeline from "./components/timeline/Timeline";
 import { Tech } from "./components/tech/Tech";
-import { Projetos } from "./components/projetos/Projetos";
 import { Contato } from "./components/contato/Contato";
 import { Footer } from "./components/footer/Footer";
 
 import "./App.css";
+import TabProjetos from "./components/projetos/tabProjetos/TabProjetos";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
       <Banner />
       <Timeline />
       <Tech />
-      <Projetos />
+      <TabProjetos />
       <Contato />
       <Footer />
     </div>

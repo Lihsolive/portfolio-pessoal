@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../../assets/img/astronauta.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import "animate.css";
 import TrackVisibility from "react-on-screen";
+import "animate.css";
+
+import headerImg from "../../assets/img/astronauta.svg";
 
 import "./Banner.css";
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0); 
+  const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
@@ -65,7 +66,9 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Bem-vindo(a) ao meu Portfolio!</span>
+                  <span className="tagline">
+                    Bem-vindo(a) ao meu Portfolio!
+                  </span>
                   <h1>
                     {`Olá! Eu sou a Liliam e sou  `}{" "}
                     <span
@@ -77,9 +80,13 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                   Programadora FullStack formada em Design, com interesse em desenvolvimento Front-End, buscando uma oportunidade para exercer minha criatividade e habilidade técnica na criação de soluções impactantes e inovadoras com design e tecnologia. 🚀
+                    Programadora FullStack, formada em Design e com interesse em
+                    desenvolvimento Front-End, buscando uma oportunidade para
+                    exercer minha criatividade e habilidades técnicas na criação
+                    de soluções impactantes e inovadoras através do design e da
+                    tecnologia 🚀
                   </p>
-                  <a href="#projeto">
+                  <a href="#projects">
                     <button>
                       Ver Projetos <ArrowRightCircle size={25} />
                     </button>

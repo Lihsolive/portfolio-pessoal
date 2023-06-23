@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-
 import Container from "react-bootstrap/Container";
 import { Navbar, Nav } from "react-bootstrap";
 
 import logo from "../../assets/img/logo.svg";
-import linkedinIcon from "../../assets/img/linkedin-icon.svg";
-import githubIcon from "../../assets/img/github-icon.svg";
-import webIcon from "../../assets/img/web-icon.svg";
+import linkedinIcon from "../../assets/icons/linkedIn.svg";
+import githubIcon from "../../assets/icons/github.svg";
+import webIcon from "../../assets/icons/web-icon.svg";
 
 import "./NavBar.css";
 
@@ -99,9 +98,9 @@ export const NavBar = () => {
               Tecnologias
             </Nav.Link>
             <Nav.Link
-              href="#projeto"
+              href="#projects"
               className={
-                activeLink === "projetos" ? "active navbar-link" : "navbar-link"
+                activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("projetos")}
             >
@@ -110,13 +109,13 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <Nav.Link
-              href="#conectar"
+              href="#connect"
               className={
-                activeLink === "conectar" ? "active navbar-link" : "navbar-link"
+                activeLink === "connect" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("conectar")}
+              onClick={() => onUpdateActiveLink("connect")}
             >
-              <button className="vvd">
+              <button className="btn-connect">
                 <span>Conectar</span>
               </button>
             </Nav.Link>

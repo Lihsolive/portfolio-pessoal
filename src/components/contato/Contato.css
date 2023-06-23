@@ -1,19 +1,17 @@
-.contato {
-  /* background: linear-gradient(90.21deg, #00011E -5.91%, #4a2fbd 111.58%); */
-  /* background: linear-gradient(75deg, #00011E -5.91%, #6f2fbd 130%); */
+.connect {
   background-color:  #02002c7a ;
   padding: 60px 0 200px 0;
 }
-.contato img {
+.connect img {
   width: 92%;
 }
-.contato h2 {
+.connect h2 {
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 30px;
 }
-.contato form input,
-.contato form textarea {
+.connect form input,
+.connect form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -26,23 +24,23 @@
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
-.contato form input:focus,
-.contato form textarea:focus {
+.connect form input:focus,
+.connect form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #00011E;
 }
-.contato form input::placeholder,
-.contato form textarea::placeholder {
+.connect form input::placeholder,
+.connect form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
 }
-.contato form input:focus::placeholder,
-.contato form textarea:focus::placeholder {
+.connect form input:focus::placeholder,
+.connect form textarea:focus::placeholder {
   color: #00011E;
   opacity: 0.8;
 }
-.contato form button {
+.connect form button {
   font-weight: 700;
   color: #00011E;
   background-color: #fff;
@@ -54,14 +52,14 @@
   transition: 0.3s ease-in-out;
   border-radius: 20px;
 }
-.contato form button span {
+.connect form button span {
   z-index: 1;
   position: relative;
 }
-.contato form button:hover {
+.connect form button:hover {
   color: #fff;
 }
-.contato form button::before {
+.connect form button::before {
   content: "";
   background: linear-gradient(50deg, #ff00cc 2%, #150030 111%);
   width: 0;
@@ -74,12 +72,12 @@
   border-radius: 20px;
 
 }
-.contato form button:hover::before {
+.connect form button:hover::before {
   width: 100%;
 }
 
 @media (max-width: 300px) {
-  .contato h2 {
+  .connect h2 {
     font-size: 2em;
   }
 }

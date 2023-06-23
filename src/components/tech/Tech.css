@@ -6,16 +6,17 @@
   background: #02002c;
   border-radius: 64px;
   text-align: center;
-  padding: 2em;
-  margin-top: -4rem;
+  padding-bottom: 6em;
+  padding-top: 2em;
+  margin-top: 2em;
   box-shadow: 10px 10px 20px #02001d7a;
 }
-.tech h2 {
+.tech-title {
   padding-top: 4rem !important;
   font-size: 2rem;
   font-weight: 700;
 }
-.tech p {
+.tech-subtitle {
   color: #b8b8b8;
   font-size: 18px;
   letter-spacing: 0.8px;
