@@ -54,7 +54,7 @@
 
 .tech-icons-item {
   width: 2em;
-  filter: invert(1) grayscale(0) brightness(100);
+  /* filter: invert(1) grayscale(0) brightness(100); */
   padding-top: 10px;
 }
 

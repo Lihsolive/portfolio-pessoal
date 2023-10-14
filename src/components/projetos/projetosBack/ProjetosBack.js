@@ -5,7 +5,7 @@ import proj1 from "../../../assets/img/proj1.jpg";
 import proj2 from "../../../assets/img/proj2.jpg";
 // icones overlay
 import sequelize from "../../../assets/icons/sequelize.svg";
-import javascript from "../../../assets/icons/javascript-icon.svg";
+import javascript from "../../../assets/icons/javascript.svg";
 import mysql from "../../../assets/icons/mysql-icon.svg";
 import node from "../../../assets/icons/nodejs.svg";
 import java from "../../../assets/icons/java-icon.svg";
