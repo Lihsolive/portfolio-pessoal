@@ -5,12 +5,12 @@ import acoli from "../../../assets/img/acoli.png";
 import myBlogLi from "../../../assets/img/myBlogLi.png";
 // icones overlay
 import java from "../../../assets/icons/java-icon.svg";
-import javascript from "../../../assets/icons/javascript-icon.svg";
+import javascript from "../../../assets/icons/javascript.svg";
 import mysql from "../../../assets/icons/mysql-icon.svg";
 import node from "../../../assets/icons/nodejs.svg";
 import react from "../../../assets/icons/react.svg";
 import spring from "../../../assets/icons/spring-icon.svg";
-import typescript from "../../../assets/icons/typescript-icon.svg";
+import typescript from "../../../assets/icons/typescript.svg";
 
 import "./ProjetosFull.css";
 

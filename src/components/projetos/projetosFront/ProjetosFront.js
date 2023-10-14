@@ -5,9 +5,9 @@ import dulceCafe from "../../../assets/img/dulceCafe.png";
 import instatily from "../../../assets/img/instatily.png";
 import bookflix from "../../../assets/img/bookflix.png";
 // icones overlay
-import html from "../../../assets/icons/html5-icon.svg";
-import css from "../../../assets/icons/css3-icon.svg";
-import javascript from "../../../assets/icons/javascript-icon.svg";
+import html from "../../../assets/icons/html5.svg";
+import css from "../../../assets/icons/css3.svg";
+import javascript from "../../../assets/icons/javascript.svg";
 
 import "../projetosFull/ProjetosFull.css";
 
